@@ -1,0 +1,119 @@
+/* ====== ОБЩИЕ СТИЛИ (Mobile First) ====== */
+body {
+  background-color: #edeed5;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: #d6e2f5;
+  border-bottom: 2px solid #b3cde0;
+}
+
+#logo img {
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #b3cde0;
+}
+
+#site-name {
+  font-weight: 700;
+  color: #1d3557;
+}
+
+/* ---------- НАВИГАЦИЯ ---------- */
+.nav a {
+  color: #1a1a1a !important;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #cce0ff;
+}
+
+/* ---------- ТАБЛИЦЫ ---------- */
+table {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #EACDD2 !important;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+/* ---------- ФОРМЫ ---------- */
+form {
+  background-color: #ffffff;
+}
+
+form label {
+  font-weight: 500;
+}
+
+input, textarea, select {
+  font-size: 1rem;
+}
+
+button, input[type="submit"] {
+  transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+/* ---------- ИЗОБРАЖЕНИЯ ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ====== MEDIA QUERY для планшетов и ПК ====== */
+@media (min-width: 768px) {
+  #site-name {
+    font-size: 26px;
+  }
+
+  .nav a {
+    padding: 6px 16px;
+  }
+
+  form {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  table {
+    font-size: 1rem;
+  }
+}
+
+/* ====== MEDIA QUERY для больших экранов ====== */
+@media (min-width: 1200px) {
+  main {
+    max-width: 960px;
+  }
+}
